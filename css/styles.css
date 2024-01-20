@@ -1,0 +1,106 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body{
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    font-size: 4rem;
+}
+
+
+.contenedor{
+    max-width: 65%;
+    margin: 0 auto;
+    width: 95%;
+}
+
+/*Header*/
+.header{
+    background-image: url(../img/MX-es-20240115-trifectadaily-perspective_alpha_website_large.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center ;
+    height: 50vh;
+
+}
+
+.header-cover{
+    background-color: #000;
+}
+
+.header-logo-section{
+    padding-top: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.idioma-inicio-sesion{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 2rem;
+}
+
+.logo-netflix{
+    height: 5rem;
+}
+
+.idioma-select{
+    background-color: transparent;
+    border: 1px solid #e5e5e5;
+    width: 12rem;
+    height: 3rem;
+    color: #fff;
+    border-radius: 3px;
+    padding: .4rem;
+    font-size: 1.5rem;
+}
+
+.idioma-select option{
+    color: #000;
+    text-align: center;
+}
+
+.btn-inicio-sesion{
+    display: flex;
+    align-items: center;
+}
+
+.btn-inicio-sesion a{
+    background-color: red;
+    padding: .7rem 2.1rem;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.grid-centro{
+    display: grid;
+    grid-template-rows: 50% 10% 40%;
+    height: 40vh;
+}
+
+.slogan{
+    display: flex;
+    align-items: center;
+}
+
+.slogan h1{
+    color: #fff;
+    text-align: center;
+    font-size: 5.5rem;
+    font-weight: 900;
+}
+
