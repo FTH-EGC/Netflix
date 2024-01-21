@@ -26,19 +26,21 @@ h1{
 /*Header*/
 .header{
     background-image: url(../img/MX-es-20240115-trifectadaily-perspective_alpha_website_large.jpg);
-    background-size:cover;
+    background-size:125%;
     background-repeat: no-repeat;
-    background-position: center ;
-    height: 50vh;
-
+    background-position: center;
+    height: 52vh;
+    position: relative;
 }
 
 .header-cover{
-    background-color: #000;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.2413340336134454) 47%, rgba(0,0,0,1) 100%);
+    height: 52vh;
 }
 
 .header-logo-section{
-    padding-top: 3.5rem;
+    padding-top: 3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -52,7 +54,7 @@ h1{
 }
 
 .logo-netflix{
-    height: 5rem;
+    height: 4rem;
 }
 
 .idioma-select{
@@ -84,12 +86,18 @@ h1{
     font-size: 1.5rem;
     font-weight: 700;
     border-radius: 5px;
+    transition: all .3s ease-in-out;
+}
+.btn-inicio-sesion a:hover{
+    background-color: rgb(218, 3, 3);
 }
 
 .grid-centro{
-    display: grid;
-    grid-template-rows: 50% 10% 40%;
     height: 40vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .slogan{
@@ -104,3 +112,198 @@ h1{
     font-weight: 900;
 }
 
+.unete{
+    color: #fff;
+    text-align: center;
+}
+.unete h2{
+    font-size: 2.6rem;
+    font-weight: 300;
+}
+.unete p{
+    font-size: 2.3rem;
+}
+
+.comenzar{
+    display: flex;
+    align-items: center;
+}
+
+.comenzar input[type="text"]{
+    background-color:  rgba(70, 90, 126, 0.4);
+    width: 45rem;
+    height: 5.15rem;
+    border: 1px solid #bebebe;
+    border-radius: 5px;
+    margin-right: 1rem;
+    padding: 0.3rem 1rem;
+}
+
+.comenzar input[type="submit"]{
+    background-color: red;
+    padding: 1.5rem 3.5rem;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    border-radius: 5px;
+    border: none;
+    transition: all .3s ease-in-out;
+}
+
+.comenzar input[type="submit"]:hover{
+    cursor: pointer;
+    background-color: rgb(218, 3, 3);
+}
+
+/*Anuncio*/
+
+.anuncio{
+    height: 15rem;
+    width: 90%;
+    background: rgb(254,17,65);
+    background: radial-gradient( 51.39% 511.66% at 47.68% -217.91%, #ff9900 0%, #e50914 17.27%, #0e1b4f 79.44%, #000413 100% );
+    background-size: 150%;
+    background-position: center bottom 100%;
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    
+    display: flex;
+    justify-content: center;
+}
+
+.contenido-anuncio{
+    display: grid;
+    grid-template-columns: max-content auto;
+    align-content: center;
+    gap: 3rem;
+}
+.div-img-anuncio{
+    display: flex;
+    align-items: center;
+}
+.contenido-anuncio img{
+    height: 8rem;
+}
+
+.texto-anuncio{
+    color: #fff;
+}
+.texto-anuncio p{
+    margin: 0.8rem 0;
+}
+.texto-anuncio p:nth-child(1){
+    font-size: 2rem;
+    font-weight: 400;
+}
+.texto-anuncio p:nth-child(2){
+    font-size: 1.7rem;
+}
+.texto-anuncio a, .texto-anuncio span{
+    font-size: 1.7rem;   
+    color: #448ef4;
+}
+
+
+/*Disfruta*/
+
+.section-disfruta{
+    margin-top: 10rem;
+}
+
+.disfruta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.texto-disfruta{
+    color: #fff;
+}
+.texto-disfruta h1{
+    font-size: 5rem;
+    font-weight: 900;
+}
+.texto-disfruta h2{
+    font-size: 2.5rem;
+    font-weight: 400;
+    /* max-width: 85%; */
+}
+.img-disfruta{
+    position: relative;
+}
+.img-disfruta img{
+    height: 550px;
+}
+
+.video-disfruta video{
+    position: absolute;
+    top: 21%;
+    left: 13%;
+    overflow: hidden;
+    height: 294px;
+    z-index: -1;
+}
+
+.section-disfruta-2{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.video-disfruta-2 video{
+    position: absolute;
+    top: 10%!important;
+    left: 17%!important;
+    overflow: hidden;
+    height: 260px;
+    z-index: -1;
+}
+
+.separador{
+    margin: 2.5rem 0;
+    height: 0.8rem;
+    background-color: #2c2c2c;
+}
+
+.info-box{
+    background-color: #000;
+    border-radius: 15px;
+    border: 2px solid #525252;;
+    color: #fff;
+    padding: 1.5rem;
+    position: absolute;
+    top: 73%;
+    left: 22%;
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    gap: 1rem;  
+}
+
+.info-box-texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 22rem;
+}
+.info-box-texto p{
+    font-size: 1.6rem;
+    margin: 0.5rem 0;
+    font-weight: 400;
+}
+
+.info-box-texto span{
+    font-size: 1.3rem;
+    color: #0071eb;
+
+}
+
+
+.info-box img{
+    height: 7rem;
+}
+.gif-animation{
+    display: flex;
+    align-items: center;
+}
+.gif-animation img{
+    height: 5.2rem!important;
+}
