@@ -7,10 +7,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/styles.css">
     <title>Netflix</title>
 </head>
 <body>
+<script src="js/index.js"></script>
     
 
 <section class="header">
@@ -23,6 +25,7 @@
                     <option value="">Español</option>
                     <option value="">English</option>
                 </select>
+                
                 <div class="btn-inicio-sesion">
                     <a href="">Iniciar sesión</a>
                 </div>
@@ -146,10 +149,121 @@
 </section>
 <div class="separador"></div>
 
-<section>
-    
-</section>
+<section class="section-preguntas-frecuentes contenedor">
+    <h1>Preguntas frecuentes</h1>
 
+    <div class="contenedor-preguntas">
+        <div class="contenedor-pregunta">
+            <div class="pregunta">
+                <p>¿Qué es Netflix?</p>
+                <i id="iconoAbrirRespuesta" class="fa-solid fa-plus"></i>
+            </div>
+            <div class="respuesta" visibility="none">
+                <p>Netflix es un servicio de streaming que ofrece una gran variedad de películas, series y documentales premiados en casi cualquier pantalla conectada a internet.
+                    Todo lo que quieras ver, a un costo mensual muy accesible. Siempre hay algo nuevo por descubrir, ¡y todas las semanas se agregan más películas y series!</p>
+            </div>
+        </div>
+        <div class="contenedor-pregunta">
+            <div class="pregunta">
+                <p>¿Cúanto cuesta Netflix?</p>
+                <i id="iconoAbrirRespuesta" class="fa-solid fa-plus"></i>
+            </div>
+            <div class="respuesta" visibility="none">
+                <p>Disfruta Netflix en tu smartphone, tablet, smart TV, laptop o dispositivo de streaming, todo por una tarifa plana mensual. Planes desde $99 hasta $299 al mes. Sin costos adicionales ni contratos.</p>
+            </div>
+        </div>
+        <div class="contenedor-pregunta">
+            <div class="pregunta">
+                <p>¿Dónde puedo ver Netflix?</p>
+                <i id="iconoAbrirRespuesta" class="fa-solid fa-plus"></i>
+            </div>
+            <div class="respuesta" visibility="none">
+                <p>Disfruta donde quieras, cuando quieras. Inicia sesión en tu cuenta de Netflix para ver contenido al instante a través de netflix.com desde tu computadora personal o en cualquier dispositivo con conexión a internet que cuente con la app de Netflix, como smart TV, smartphones, tablets, reproductores multimedia y consolas de juegos.
+                    Además, puedes descargar tus series favoritas con iOS, Android o la app para Windows 10. Con la función de descarga, puedes ver donde vayas y sin conexión a internet. Lleva Netflix contigo adonde sea.</p>
+            </div>
+        </div>
+        <div class="contenedor-pregunta">
+            <div class="pregunta">
+                <p>¿Cómo cancelo?</p>
+                <i id="iconoAbrirRespuesta" class="fa-solid fa-plus"></i>
+            </div>
+            <div class="respuesta" visibility="none">
+                <p>Netflix es flexible. Sin contratos molestos ni compromisos. Cancela la membresía online con solo dos clics. No hay cargos por cancelación. Empieza y termina cuando quieras.</p>
+            </div>
+        </div>
+        <div class="contenedor-pregunta">
+            <div class="pregunta">
+                <p>¿Qué puedo ver en Netflix?</p>
+                <i id="iconoAbrirRespuesta" class="fa-solid fa-plus"></i>
+            </div>
+            <div class="respuesta" visibility="none">
+                <p>Netflix tiene un amplio catálogo de películas, series, documentales, animes, originales premiados y más. Todo lo que quieras ver, cuando quieras.</p>
+            </div>
+        </div>
+        <div class="contenedor-pregunta">
+            <div class="pregunta">
+                <p>¿Es bueno Netflix para los niños?</p>
+                <i id="iconoAbrirRespuesta" class="fa-solid fa-plus"></i>
+            </div>
+            <div class="respuesta" visibility="none">
+                <p>La experiencia de Netflix para niños está incluida en la membresía para que los padres tengan el control mientras los peques disfrutan series y películas familiares en su propio espacio.
+                    Los perfiles para niños incluyen controles parentales protegidos por PIN que te permiten restringir el contenido que pueden ver los niños en función de la clasificación por edad y bloquear determinados títulos que no quieras que los niños vean.</p>
+            </div>
+        </div>
+
+        <div class="grid-preguntas-frecuentes">
+            <div class="unete">
+                <p>¿Quieres ver Netflix ya? Ingresa tu email para crear una cuenta o reiniciar tu membresía de Netflix. </p>
+            </div>
+    
+            <div class="comenzar">
+                <input type="text">
+                <input type="submit" value="Comenzar >">
+            </div> 
+        </div>
+    </div>
+</section>
+<div class="separador"></div>
+
+<footer class="footer contenedor">
+
+   <p class="preguntas">¿Preguntas? Llama al <a href="#" >800 953 1430</a></p>
+
+   <div class="seccion-enlaces">
+        <nav>
+            <a href="#">Preguntas frecuentes</a>
+            <a href="#">Relaciones con inversionistas</a>
+            <a href="#">Comprar tarjetas de regalo</a>
+            <a href="#">Preferencias de cookies</a>
+            <a href="#">Avisos legales</a>
+        </nav>
+        <nav>
+            <a href="#">Centro de ayuda</a>
+            <a href="#">Empleo</a>
+            <a href="#">Formas de ver</a>
+            <a href="#">Información corporativa</a>
+            <a href="#">Solo en Netflix</a>
+        </nav>
+        <nav>
+            <a href="#">Cuenta</a>
+            <a href="#">Tienda de Netflix</a>
+            <a href="#">Términos de uso</a>
+            <a href="#">Contáctanos</a>
+        </nav>
+        <nav>
+            <a href="#">Prensa</a>
+            <a href="#">Canjear tarjetas de regalo</a>
+            <a href="#">Privacidad</a>
+            <a href="#">Prueba de velocidad</a>
+        </nav>
+   </div>
+   <select name="" id="" class="idioma-select">
+        <option value="">Español</option>
+        <option value="">English</option>
+    </select>
+
+    <p class="netflix-mexico">Netflix México</p>
+</footer>
 
 </body>
 </html>
