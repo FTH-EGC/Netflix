@@ -357,8 +357,23 @@ h1{
     align-items: center;
     justify-content: space-between;
     font-size: 2.5rem;
+    /* display: none; */
+    transition: opacity 0.5s, display 0.5s;
+}
+
+.respuesta-visible{
+    opacity: 1;
+    display: block;
+}
+
+.respuesta-not-visible-opacity{
+    opacity: 0;
+}
+
+.respuesta-not-visible{
     display: none;
 }
+
 
 .grid-preguntas-frecuentes{
     margin: 3.5rem 0 6rem 0;

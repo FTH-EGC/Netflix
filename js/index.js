@@ -2,30 +2,49 @@
 
 
 document.addEventListener('DOMContentLoaded',() => {
-    const iconoAbrirRespuesta = document.querySelectorAll('#iconoAbrirRespuesta');
+    const pregunta = document.querySelectorAll('.pregunta');
     
-    for(icono of iconoAbrirRespuesta){
-        icono.addEventListener('click', (e) => {
-            const iconoClick = e.target;
+    for(pre of pregunta){
+        pre.addEventListener('click', (e) => {
+            const preguntaClick = e.target;
 
-            const iconoPadre = iconoClick.parentElement;
+            console.log(preguntaClick)
 
-            const respuesta = iconoPadre.nextElementSibling;
+            // const iconoPadre = iconoClick.parentElement;
 
+            const respuesta = preguntaClick.nextElementSibling;            
             const respuestaVisibility = respuesta.getAttribute('visibility');
 
+            
+            const icono = preguntaClick.children[1];
+
             if(respuestaVisibility === 'none'){
-                respuesta.style.display = 'block';
+                // respuesta.style.display = 'block';
+                respuesta.classList.remove('respuesta-not-visible');
+                setTimeout(() => {
+                    respuesta.classList.remove('respuesta-not-visible-opacity')
+                }, 20);
+                respuesta.classList.add('respuesta-visible');
                 respuesta.setAttribute('visibility', 'visible');
-                iconoClick.classList.remove('fa-plus');
-                iconoClick.classList.add('fa-xmark');
+                icono.classList.remove('fa-plus');
+                icono.classList.add('fa-xmark');
                 return;
             }
 
-            respuesta.style.display = 'none';
+            // respuesta.style.display = 'none';
+            respuesta.classList.remove('respuesta-visible');
+            respuesta.addEventListener('transitionend', () => {
+                respuesta.classList.add('respuesta-not-visible');
+            },{
+                capture: false,
+                once: true,
+                passive: false
+              })
+            respuesta.classList.add('respuesta-not-visible-opacity');
+
             respuesta.setAttribute('visibility', 'none');
-            iconoClick.classList.remove('fa-xmark');
-            iconoClick.classList.add('fa-plus');
+            icono.classList.remove('fa-xmark');
+            icono.classList.add('fa-plus');
         })
     }
 });
