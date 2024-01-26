@@ -146,14 +146,39 @@ h1{
     align-items: center;
 }
 
+.inputtext{
+    position: relative;
+}
 .comenzar input[type="text"]{
-    background-color:  rgba(70, 90, 126, 0.4);
+    /* background-color:  rgba(70, 90, 126, 0.4); */
+    background-color: rgba(22, 22, 22, 0.7);
     width: 45rem;
     height: 5.15rem;
-    border: 1px solid #bebebe;
+    border: 1px solid #a8a8a8;
     border-radius: 5px;
     margin-right: 1rem;
     padding: 0.3rem 1rem;
+    color: #fff;
+
+}
+.inptspan{
+    position: absolute;
+    top: 36%;
+    left: 2%;
+    font-size: 1.5rem;
+    color:  #a8a8a8;
+}
+
+.inptspan-focused{
+    position: absolute;
+    top: 18%;
+    left: 2%;
+    font-size: 1.2rem;
+    color:  #a8a8a8;
+}
+
+.email-error{
+    border: 1px solid red;
 }
 
 .comenzar input[type="submit"]{
